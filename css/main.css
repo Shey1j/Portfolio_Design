@@ -72,6 +72,15 @@ header .header-menu ul a:hover {
   color: #222;
 }
 
+header .header-menu ul .current-dir {
+  color: #f5f5f5;
+}
+
+header .header-menu ul .current-dir:hover {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
 header .header-menu .menu {
   clear: both;
   max-height: 0;
@@ -298,6 +307,13 @@ main .main-container .card-4 {
   width: 50%;
 }
 
+main .main-container .contact-phone,
+main .main-container .contact-location,
+main .main-container .contact-email {
+  margin-top: 20px;
+  height: 150px;
+}
+
 /*-----FOOTER-----*/
 footer {
   display: -webkit-box;
@@ -329,7 +345,7 @@ footer .copyright {
 }
 
 .about-main h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-bottom: 2px solid #333;
 }
 
@@ -339,6 +355,32 @@ footer .copyright {
   margin-left: auto;
   margin-right: auto;
   height: 500px;
+}
+
+/*--------CONTACT PAGE---------*/
+.contact-main {
+  margin-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.contact-main h1 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+}
+
+.contact-main iframe {
+  margin-top: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.contact-main .horiz-line {
+  border: 1px solid #969595;
 }
 
 @media only screen and (max-width: 697px) {

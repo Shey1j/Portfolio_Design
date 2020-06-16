@@ -84,6 +84,15 @@ header {
           color: $background-color;
         }
       }
+
+      .current-dir {
+        color: #f5f5f5;
+
+        &:hover {
+            background-color: $color1;
+            color: $background-color;
+        }
+      }
     }
 
     .menu {
@@ -287,6 +296,7 @@ main {
 
       .card-info {
         padding: 10px;
+
         h4 {
           font-size: 16px;
         }
@@ -302,6 +312,14 @@ main {
     .card-4 {
       width: 50%;
     }
+
+    .contact-phone,
+    .contact-location,
+    .contact-email {
+        margin-top: 20px;
+        height: 150px;
+    }
+
   }
 }
 
@@ -327,23 +345,57 @@ footer {
   }
 }
 
-/*-------RESUME PAGE--------*/
-.about-main {
+@mixin page-grid {
     margin-bottom: 20px;
     display: grid;
+}
+
+@mixin page-heading {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+@mixin iframe-style {
+    margin-top: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------RESUME PAGE--------*/
+.about-main {
+    @include page-grid();
 
     h1 {
-        margin-bottom: 10px;
-        border-bottom: 2px solid #333;
+        @include page-heading();
     }
 
     iframe {
-        margin-top: 10px;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        @include iframe-style();
         height: 500px;
     }
+}
+
+
+/*--------CONTACT PAGE---------*/
+.contact-main {
+    @include page-grid();
+
+    h1 {
+        @include page-heading();
+    }
+
+    iframe {
+        @include iframe-style();
+        height: 200px;
+        border: 2px solid $color;
+        margin-bottom: 20px;
+    }
+
+    .horiz-line {
+        border: 1px solid $color3;
+    }
+
 }
 
 @media only screen and (max-width: 697px) {
