@@ -278,8 +278,8 @@ main .main-container .card {
 }
 
 main .main-container .card .card-image img {
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
   margin-top: 10px;
   margin-right: 10px;
 }
