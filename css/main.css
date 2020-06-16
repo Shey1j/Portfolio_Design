@@ -380,7 +380,7 @@ footer .copyright {
 }
 
 .contact-main .horiz-line {
-  border: 1px solid #969595;
+  border: 1px solid #333;
 }
 
 @media only screen and (max-width: 697px) {
