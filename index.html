@@ -3,153 +3,698 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/Free_Sample_By_Wix.jpg" type="image/jpg">
+    <link
+      rel="shortcut icon"
+      href="./img/Free_Sample_By_Wix.jpg"
+      type="image/jpg"
+    />
     <title>Oluwaseyi</title>
     <link rel="stylesheet" href="css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-
-    <!--HEADER TAG-->
-    <header>
-      <div class="my-logo">
-        <a href="/Portfolio_Design/"
-          ><img
-            src="./img/Free_Sample_By_Wix.jpg"
-            alt="This is my personal logo"
+    <div class="container mw-100 p-0">
+      <nav class="navbar navbar-expand-lg header px-md-5">
+        <a href="/" class="navbar-brand"
+          ><img src="./img/Free_Sample_By_Wix.jpg" alt="my-logo"
         /></a>
-      </div>
-      <div class="header-menu">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"
-          ><span class="nav-icon"></span
-        ></label>
-        <ul class="menu">
-          <li><a href="/Portfolio_Design/" class="current-dir">About Me</a></li>
-          <li><a href="/Portfolio_Design/pages/resume.html">Resume</a></li>
-          <li><a href="/Portfolio_Design/pages/portfolio.html">Portfolio</a></li>
-          <li><a href="/Portfolio_Design/pages/contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </header>
 
-    <!--MAIN TAG-->
-    <main>
-      <div class="main-top">
-        <div class="main-left">
-          <img
-            src="./img/IMG_20181226_165359_433.jpg"
-            alt="My personal image"
-          />
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span role="navbar-toggler-icon">
+            <i class="fa fa-bars" aria-hidden="true" style="color: #fff;"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav pl-4 ml-auto mr-5">
+            <li class="nav-item active py-2">
+              <a href="#" class="nav-link mr-4">Home</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#about" class="nav-link mr-4">About Me</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#resume" class="nav-link mr-4">Resume</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#portfolio" class="nav-link mr-4">Portfolio</a>
+            </li>
+            <li class="nav-item py-2">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="main-right">
-          <h4>Frontend Developer</h4>
-          <h1>Oluwaseyi Awotunde</h1>
-          <p>
-            Welcome to my portfolio Website. Most of my works can be previewed
-            here but you can also see them on GitHub. This site was built with
-            purely HTML and SASS. Enjoy!
+      </nav>
+
+      <!--MAIN BODY-->
+      <!--HOME PAGE-->
+      <div class="container mt-5 d-flex mb-5 text-center px-5">
+        <div class="row">
+          <div class="col-12 col-md-6 text-sm-center mb-4 text-md-left">
+            <img
+              src="./img/IMG_20181226_165359_433.jpg"
+              alt="my personal image"
+              class="img-fluid rounded-circle img-left"
+            />
+          </div>
+          <div class="col-12 col-md-6 text-sm-center my-md-auto">
+            <h4 class="font-italic">
+              <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='["Frontend Developer", "QA Tester", "Aspiring Full-stack Developer"]'
+              ></span>
+            </h4>
+            <h1>Oluwaseyi <span class="name">Awotunde</span></h1>
+            <p>
+              Welcome to my portfolio Website. Most of my works can be previewed
+              here but you can also see them on GitHub. This site was built with
+              purely HTML, CSS(SASS), Bootstrap 4 and JavaScript. Enjoy!
+            </p>
+            <div class="icons d-flex justify-content-center">
+              <a href="https://github.com/Shey1j" class="mr-4"
+                ><i class="fa fa-github-square" aria-hidden="true"></i
+              ></a>
+              <a href="https://twitter.com/SeyiJuliana" class="mr-4"
+                ><i class="fa fa-twitter-square" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.facebook.com/awotunde.seyi.9" class="mr-4"
+                ><i class="fa fa-facebook-square" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/oluwaseyi-awotunde-ba5690149/"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ABOUT PAGE-->
+      <div class="container mw-100 px-5 py-4 py-md-5 text-center" id="about">
+        <div class="main-title mb-4">
+          <h2 class="text-white">About Me</h2>
+          <div class="progress mx-auto" style="height: 4px; width: 150px;">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+
+        <div class="text-center px-md-5">
+          <p class="text-white about-text px-md-5">
+            Recent University graduate with a Computer Science degree. Fluent in
+            HTML5, CSS, SASS and Bootstrap 4 and worked with React and Redux and
+            understand Git workflow. <br> 1+ years experience in Frontend
+            Development and a highly dedicated team player. Proficient in HTML,
+            CSS, SASS,Bootstrap 4 and I am conversant with React and Ruby on
+            Rails. Participated in more than one internship with different
+            companies. <br>Effective at working in fast-paced testing environment to
+            review software at each stage of development and production. Able to
+            check function, layout and operation for usability and visual design
+            issues. Familiar with working in Agile-driven environments.
           </p>
-          <a href="/Portfolio_Design/pages/resume.html"><button class="resume-button">My Resume</button></a>
-          <a href="/Portfolio_Design/pages/contact.html"><button class="contact-button">Contact</button></a>
         </div>
+
+        <!--
+        
+        -->
       </div>
 
-      <div class="main-title">
-        <h2>What I Do</h2>
-      </div>
-
-      <div class="main-container">
-        <div class="card card-1">
-          <div class="card-image">
-            <img
-              src="./img/icons/icons8-google-code-24.png"
-              alt="web development"
-            />
-          </div>
-          <div class="card-info">
-            <h4>
-              Web Development
-            </h4>
-            <p>
-              I am proficient in HTML, CSS, SASS. I am currently learning
-              JavaScript and will modify this portfolio once I have done that. I
-              can code a little bit of React and Ruby on Rails. I am a
-              full-fledged Frontend Developer.
-            </p>
+      <!--RESUME PAGE-->
+      <div class="container px-4 py-4 mw-100" id="resume">
+        <div class="text-center mb-4">
+          <h2>Experience</h2>
+          <div class="progress mx-auto" style="height: 4px; width: 150px;">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
           </div>
         </div>
 
-        <div class="card card-2">
-          <div class="card-image">
-            <img
-              src="./img/icons/icons8-test-passed-24.png"
-              alt="software testing"
-            />
+        <!--EXPERIENCES AND DATES-->
+        <div class="row mb-4 px-md-5">
+          <!--HNG INTERNSHIP-->
+          <div class="col-12 d-flex mb-3">
+            <div class="col-3 mr-2">
+              <p class="resume-date font-weight-bold text-secondary">
+                06-/2020-Present
+              </p>
+            </div>
+            <div class="col-7 my-auto">
+              <div class="resume-content">
+                <h5>Front end Developer Intern</h5>
+                <p class="company font-italic">HNG Internship</p>
+                <ul class="d-none d-md-block">
+                  <li>
+                    Converted designs to code using Boostrap 4, HTML, CSS and
+                    JavaScript
+                  </li>
+                  <li>Worked as a sub team lead for an Envato-related task</li>
+                  <li>
+                    Learnt how to build responsive and pixel-perfect
+                    implementation of designs across different viewports
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-1 my-auto d-block d-md-none">
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                type="button"
+                data-toggle="modal0"
+                data-target="#hng"
+              ></i>
+
+              <!--ZEROTH MODAL-->
+              <div
+                class="modal fade"
+                id="hng"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="hngTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="hngLongTitle">
+                        Front End Developer Intern
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex mb-4">
+                        <p class="company text-center">
+                          <img
+                            src="./img/brand-logo.png"
+                            alt=""
+                            class="img-fluid w-100"
+                          />
+                          HNG Internship
+                        </p>
+                        <ul class="px-4">
+                          <li>
+                            Converted designs to code using Boostrap 4, HTML,
+                            CSS and JavaScript
+                          </li>
+                          <li>
+                            Worked as a sub team lead for an Envato-related task
+                          </li>
+                          <li>
+                            Learnt how to build responsive and pixel-perfect
+                            implementation of designs across different viewports
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-info">
-            <h4>
-              Software Testing
-            </h4>
-            <p>
-              I am good at testing React frontend code using Cypress. I can also
-              test APIs using Postman. I document errors and shortcomings for
-              reviewing by other developers.
-            </p>
+          <!--DEVCAREER AND PROGATE-->
+          <div class="col-12 d-flex mb-3">
+            <div class="col-3 mr-2">
+              <p class="resume-date font-weight-bold text-secondary">
+                05/2020-Present
+              </p>
+            </div>
+            <div class="col-7 my-auto">
+              <div class="resume-content">
+                <h5>Web Development Intern</h5>
+                <p class="company font-italic">DevCareer & Progate</p>
+                <ul class="d-none d-md-block">
+                  <li>
+                    Learnt how to use SASS and I used it in building this
+                    portfolio
+                  </li>
+                  <li>
+                    Did a mini-project using Ruby-on-Rails, based on the courses
+                    taken on the Learning path
+                  </li>
+                  <li>
+                    Did a JavaScript course to understand the fundamentals
+                    before diving solely into React
+                  </li>
+                  <li>
+                    Worked on some mini-projects using HTML, CSS and JavaScript
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1 my-auto d-block d-md-none">
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                type="button"
+                data-toggle="modal"
+                data-target="#devcareer"
+              ></i>
+
+              <!--FIRST MODAL-->
+              <div
+                class="modal fade"
+                id="devcareer"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="devcareerTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="devcareerLongTitle">
+                        Web Development Intern
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="d-flex mb-4">
+                        <div class="col-5">
+                          <img
+                            src="./img/progate.png"
+                            alt=""
+                            class="d-block w-100"
+                          />
+                        </div>
+                        <div class="col-2">
+                          <h2>&</h2>
+                        </div>
+                        <div class="col-5">
+                          <img
+                            src="./img/devlogo2.png"
+                            alt=""
+                            class="d-block w-100"
+                          />
+                        </div>
+                      </div>
+
+                      <ul class="px-4">
+                        <li>
+                          Learnt how to use SASS and I used it in building this
+                          portfolio
+                        </li>
+                        <li>
+                          Did a mini-project using Ruby-on-Rails, based on the
+                          courses taken on the Learning path
+                        </li>
+                        <li>
+                          Did a JavaScript course to understand the fundamentals
+                          before diving solely into React
+                        </li>
+                        <li>
+                          Worked on some mini-projects using HTML, CSS and
+                          JavaScript
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SOFTWARE TESTING-->
+          <div class="col-12 d-flex mb-3">
+            <div class="col-3 mr-2">
+              <p class="resume-date font-weight-bold text-secondary">
+                02/2019-07/2019
+              </p>
+            </div>
+            <div class="col-7 my-auto">
+              <div class="resume-content">
+                <h5>Software Tester</h5>
+                <p class="company font-italic">Fieldinsight, Akoka, Lagos</p>
+                <ul class="d-none d-md-block">
+                  <li>
+                    Reviewed requirements and specifications to understand
+                    software design standards
+                  </li>
+
+                  <li>
+                    Evaluated software for functionality, form and usability
+                  </li>
+                  <li>
+                    Defined, created and controlled testing environments for
+                    successful software deliverables.
+                  </li>
+                  <li>
+                    Carried out tests to identify report and repair issues such
+                    as bugs and glitches.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1 my-auto d-block d-md-none">
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                type="button"
+                data-toggle="modal"
+                data-target="#software"
+              ></i>
+
+              <!--SECOND MODAL-->
+              <div
+                class="modal fade"
+                id="software"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="softwareTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="softwareLongTitle">
+                        Software Tester
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="company text-center">
+                        <img
+                          src="./img/company.png"
+                          alt=""
+                          class="img-fluid w-100"
+                        />
+                        Fieldinsight, Akoka, Lagos
+                      </p>
+                      <ul class="px-4">
+                        <li>
+                          Reviewed requirements and specifications to understand
+                          software design standards
+                        </li>
+
+                        <li>
+                          Evaluated software for functionality, form and
+                          usability
+                        </li>
+                        <li>
+                          Defined, created and controlled testing environments
+                          for successful software deliverables.
+                        </li>
+                        <li>
+                          Carried out tests to identify report and repair issues
+                          such as bugs and glitches.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--SOFTWARE DEVELOPMENT INTERN-->
+          <div class="col-12 d-flex">
+            <div class="col-3 mr-2">
+              <p class="resume-date font-weight-bold text-secondary">
+                09/2018-12/2018
+              </p>
+            </div>
+            <div class="col-7 my-auto">
+              <div class="resume-content">
+                <h5>Software Development Intern</h5>
+                <p class="company font-italic">Fieldinsight, Akoka, Lagos</p>
+                <ul class="d-none d-md-block">
+                  <li>
+                    Wrote clean, clear and well tested code for various
+                    projects, such as Facilities and Location in FIeldinsight V2
+                    , Hobby Application
+                  </li>
+                  <li>
+                    Created interactive websites with software development
+                    department using HTML and JavaScript frameworks and
+                    libraries
+                  </li>
+                  <li>
+                    Collaborated with other developers to identify and alleviate
+                    number of bugs and errors in software
+                  </li>
+                  <li>Contributed ideas during department meetings</li>
+                  <li>
+                    Worked with React JS and Redux for front end web development
+                    and Sails JS for backend web development
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-1 my-auto d-block d-md-none">
+              <i
+                class="fa fa-chevron-right"
+                aria-hidden="true"
+                type="button"
+                data-toggle="modal"
+                data-target="#development"
+              ></i>
+
+              <!--THIRD MODAL-->
+              <div
+                class="modal fade"
+                id="development"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="developmentTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="developmentLongTitle">
+                        Software Development Intern
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="company text-center">
+                        <img
+                          src="./img/company.png"
+                          alt=""
+                          class="img-fluid w-100"
+                        />
+                        Fieldinsight, Akoka, Lagos
+                      </p>
+                      <ul class="px-4">
+                        <li>
+                          Wrote clean, clear and well tested code for various
+                          projects, such as Facilities and Location in
+                          FIeldinsight V2 , Hobby Application
+                        </li>
+                        <li>
+                          Created interactive websites with software development
+                          department using HTML and JavaScript frameworks and
+                          libraries
+                        </li>
+                        <li>
+                          Collaborated with other developers to identify and
+                          alleviate number of bugs and errors in software
+                        </li>
+                        <li>Contributed ideas during department meetings</li>
+                        <li>
+                          Worked with React JS and Redux for front end web
+                          development and Sails JS for backend web development
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="break"></div>
-
-        <div class="card card-4">
-          <div class="card-image">
-            <img
-              src="./img/icons/icons8-product-management-24.png"
-              alt="project management"
-            />
+        <!--EDUCATION-->
+        <div class="text-center mb-4">
+          <h2>Education</h2>
+          <div class="progress mx-auto" style="height: 4px; width: 150px;">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
           </div>
-          <div class="card-info">
-            <h4>Project Management</h4>
-            <p>
-              I am good at managing projects. I can work well with project
-              management tools like: Trello and TeamGantt. I work well with
-              deadlines and know how to motivate team members to work.
-            </p>
+        </div>
+
+        <div class="row mb-4 px-md-5">
+          <div class="col-12 d-flex">
+            <div class="col-3">
+              <p class="resume-date font-weight-bold text-secondary">
+                09/2014-12/2019
+              </p>
+            </div>
+            <div class="col-9 my-auto">
+              <div class="resume-content">
+                <h5>Bachelor of Science: Computer Science</h5>
+                <p class="company font-italic">
+                  University of Lagos, Akoka, Lagos, Nigeria
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex">
+            <div class="col-3">
+              <p class="resume-date font-weight-bold text-secondary">
+                09/2008-06/2014
+              </p>
+            </div>
+            <div class="col-9 my-auto">
+              <div class="resume-content">
+                <h5>High School Diploma</h5>
+                <p class="company font-italic">
+                  The Ambassadors College, Ota, Ogun State, Nigeria
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <!--FOOTER TAG-->
-    <footer>
-      <div class="social-media-icons">
-        <a href="https://www.facebook.com/awotunde.seyi.9/"
-          ><img
-            src="./img/icons/icons8-facebook-old-24.png"
-            alt="facebook icon"
-        /></a>
-        <a href="https://www.instagram.com/sheyi_a/"
-          ><img src="./img/icons/icons8-instagram-24.png" alt="instagram icon"
-        /></a>
-        <a href="https://twitter.com/SeyiJuliana"
-          ><img
-            src="./img/icons/icons8-twitter-squared-24.png"
-            alt="twitter icon"
-        /></a>
-        <a href="https://github.com/Shey1j"
-          ><img src="./img/icons/icons8-github-24.png" alt="github icon"
-        /></a>
-        <a href="https://www.linkedin.com/in/oluwaseyi-awotunde-ba5690149/"
-          ><img src="./img/icons/icons8-linkedin-24.png" alt="linkedin icon"
-        /></a>
+      <!--WORK MANAGEMENT-->
+      <div class="container py-5 px-5 mw-100 work-content">
+        <div class="row text-center py-md-4">
+          <div class="col-12 col-md-4 mb-3 px-md-5">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <div class="content">
+              <h5>Web Development</h5>
+              <p>
+                I am proficient in HTML, CSS, SASS and Bootstrap 4. I have
+                worked with React, Ruby on Rails and SailsJS. I am a
+                full-fledged Frontend Developer.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3 px-md-5">
+            <i class="fa fa-wrench" aria-hidden="true"></i>
+            <div class="content">
+              <h5>Software Testing</h5>
+              <p>
+                I am good at testing React code using Cypress. I can also test
+                APIs using Postman. I document errors and shortcomings for
+                reviewing by other developers.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 px-md-5">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+            <div class="content">
+              <h5>Project Management</h5>
+              <p>
+                I can work well with project management tools like: Trello,
+                Clubhouse and TeamGantt. I work well with deadlines and know how
+                to motivate team members to work.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="copyright">
-        <p>&copy;2020. Oluwaseyi Awotunde</p>
+
+      <!--MY PORTFOLIO-->
+      <div class="container px-4 py-5 mw-100 text-center" id="portfolio">
+        <div class="main-title mb-4">
+          <h2>My Works</h2>
+          <div class="progress mx-auto" style="height: 4px; width: 150px;">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 50%;"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+
+        <div class="row px-4 py-4">
+          <div class="col-12">
+            <div class="card border-0">
+              <div class="card-body"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+
+    <script src="./js/txtRotate.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
