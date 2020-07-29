@@ -69,7 +69,7 @@ h5 {
 
 /*--ABOUT PAGE--*/
 #about {
-  background-color: #222;
+  background-color: rgba(51, 51, 51, 0.493);
 }
 
 .work-content {
@@ -83,6 +83,20 @@ h5 {
 
 .content {
   color: #f5f5f5;
+}
+
+.see-more:hover {
+  text-decoration: none;
+}
+
+.see-more h5:hover {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+
+.see-more i:hover {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
 }
 
 /*--FOOTER--*/

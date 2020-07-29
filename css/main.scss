@@ -92,7 +92,7 @@ h5 {
 
 /*--ABOUT PAGE--*/
 #about {
-  background-color: $background-color;
+  background-color: rgba(51, 51, 51, 0.493);
 }
 
 .work-content {
@@ -105,6 +105,22 @@ h5 {
 }
 .content {
   color: $color1;
+}
+
+.see-more {
+    &:hover {
+      text-decoration: none;
+    }
+    h5 {
+      &:hover {
+      transform: translateX(2px);
+      }
+    }
+  i {
+    &:hover {
+      transform: translateX(2px);
+    }
+  }
 }
 
 /*--FOOTER--*/

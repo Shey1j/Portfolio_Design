@@ -684,7 +684,7 @@
 
         <div class="row px-4 py-4 px-md-5">
           <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card">
+            <div class="card mx-md-4">
               <img
                 class="card-img-top w-100"
                 src="img/designportfolio.png"
@@ -699,7 +699,7 @@
                   stage 7. Animations from AOS library were used.
                 </p>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="https://envato-2-0.netlify.app/"
                   class="btn btn-primary"
                   >Live Preview</a
@@ -709,7 +709,7 @@
           </div>
 
           <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card">
+            <div class="card mx-md-4">
               <img
                 class="card-img-top w-100"
                 src="img/certificate.PNG"
@@ -724,7 +724,7 @@
                   stage 5. Animations from AOS library were used.
                 </p>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="https://hngi8.netlify.app/pages/request-certificate.html"
                   class="btn btn-primary"
                   >Live Preview</a
@@ -734,7 +734,7 @@
           </div>
 
           <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card">
+            <div class="card mx-md-4">
               <img
                 class="card-img-top w-100"
                 src="img/about.PNG"
@@ -749,7 +749,7 @@
                   stage 5. Animations from AOS library were used.
                 </p>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="https://hngi8.netlify.app/pages/about.html"
                   class="btn btn-primary"
                   >Live Preview</a
@@ -759,7 +759,7 @@
           </div>
 
           <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card">
+            <div class="card mx-md-4">
               <img
                 class="card-img-top w-100"
                 src="img/contact.PNG"
@@ -772,7 +772,7 @@
                   stage 5. Animations from AOS library were used.
                 </p>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="https://hngi8.netlify.app/pages/contact.html"
                   class="btn btn-primary"
                   >Live Preview</a
@@ -782,7 +782,7 @@
           </div>
 
           <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card">
+            <div class="card mx-md-4">
               <img
                 class="card-img-top w-100"
                 src="img/landing.PNG"
@@ -795,7 +795,7 @@
                   stage 4. Animations from AOS library were used.
                 </p>
                 <a
-                target="_blank"
+                  target="_blank"
                   href="https://team-new-avengers.netlify.app/landing-page-21.html"
                   class="btn btn-primary"
                   >Live Preview</a
@@ -804,6 +804,13 @@
             </div>
           </div>
         </div>
+
+        <a href="https://github.com/Shey1j"
+          class="see-more"
+          ><h5>
+            SEE MORE
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h5
+        ></a>
       </div>
 
       <div class="container px-4 py-5 mw-100 text-center" id="contact">
@@ -821,23 +828,85 @@
           </div>
         </div>
 
-        <div class="px-md-5 mb-4" style="width: 100%; height: 300px;">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9595482516547!2d3.373520314266604!3d6.526793324937038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8dab0be5b19d%3A0x746b60c153b630db!2s4%20Asubiaro%20St%2C%20Igbobi%20100001%2C%20Lagos!5e0!3m2!1sen!2sng!4v1595994680054!5m2!1sen!2sng"
-            frameborder="0"
-            style="border: 1px solid gray; width: 100%; height: 100%;"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe>
-        </div>
-
         <div class="text-center">
           <p>Want to get in touch about a project or a job?</p>
           <p>
             Feel free to contact me at
             <a href="mailto:seyi.juliana@gmail.com">seyi.juliana@gmail.com</a>
           </p>
+          <p>OR</p>
+          <h5 class="mb-4">Get in touch</h5>
+          <div class="px-5 py-5 mx-5 border">
+            <form
+              action="MAILTO:seyi.juliana@gmail.com"
+              class="px-5"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="firstName"
+                    id="inputFirstName"
+                    placeholder="First name"
+                    tabindex="1"
+                    autofocus
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="lastName"
+                    id="inputLastName"
+                    placeholder="Last name"
+                    tabindex="2"
+                    autofocus
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="emailAddress"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Email"
+                  tabindex="3"
+                  autofocus
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="subject"
+                  id="inputSubject"
+                  placeholder="Subject"
+                  tabindex="4"
+                  autofocus
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name=""
+                  id="inputMessage"
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                  tabindex="5"
+                  autofocus
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
         </div>
       </div>
 
