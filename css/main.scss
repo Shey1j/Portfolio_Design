@@ -45,6 +45,19 @@ h5 {
   line-height: 20px !important;
 }
 
+button {
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+
+  &:active {
+    transform: translateX(4px);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
 /*.navbar-expand-lg .navbar-nav .nav-link*/
 .navbar-brand {
   img {
@@ -60,6 +73,9 @@ h5 {
       color: $color;
 
       &:hover {
+        color: #0f59d2;
+      }
+      &:active {
         color: #0f59d2;
       }
     }
@@ -108,14 +124,14 @@ h5 {
 }
 
 .see-more {
+  &:hover {
+    text-decoration: none;
+  }
+  h5 {
     &:hover {
-      text-decoration: none;
-    }
-    h5 {
-      &:hover {
       transform: translateX(2px);
-      }
     }
+  }
   i {
     &:hover {
       transform: translateX(2px);
