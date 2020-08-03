@@ -26,9 +26,12 @@
     />
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
     <header class="mb-5">
-      <nav class="navbar navbar-expand-lg header position-fixed sticky-top py-0 px-md-5 w-100" style="z-index: 99;">
+      <nav
+        class="navbar navbar-expand-lg header position-fixed sticky-top py-0 px-md-5 w-100"
+        style="z-index: 99;"
+      >
         <a href="/" class="navbar-brand"
           ><img src="./img/Free_Sample_By_Wix.jpg" alt="my-logo"
         /></a>
@@ -50,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav pl-4 ml-auto mr-5">
             <li class="nav-item py-2">
-              <a href="#home" class="nav-link mr-4">Home</a>
+              <a href="#" class="nav-link mr-4">Home</a>
             </li>
             <li class="nav-item py-2">
               <a href="#about" class="nav-link mr-4">About Me</a>
@@ -72,8 +75,10 @@
     <main>
       <!--MAIN BODY-->
       <!--HOME PAGE-->
-      <div class="jumbotron jumbotron-fluid mb-0" id="home">
-        <div class="container text-center text-md-left d-md-flex px-md-3 mx-lg-auto">
+      <div class="jumbotron jumbotron-fluid mb-0">
+        <div
+          class="container text-center text-md-left d-md-flex px-md-3 mx-lg-auto"
+        >
           <div class="col-12 col-md-6 text-center text-md-left">
             <img
               src="./img/IMG_20181226_165359_433.jpg"
@@ -81,36 +86,36 @@
               class="img-fluid rounded-circle mt-5 mb-3 img-left"
             />
           </div>
-            <div class="col-12 col-md-6 px-md-0 my-md-auto pl-lg-4">
-              <h4 class="font-italic">
-                <span
-                  class="txt-rotate"
-                  data-period="2000"
-                  data-rotate='["Frontend Developer", "QA Tester", "Aspiring Full-stack Developer"]'
-                ></span>
-              </h4>
-              <h1>Oluwaseyi <span class="name">Awotunde</span></h1>
-              <p>
-                Welcome to my portfolio Website. Most of my works can be previewed
-                here but you can also see them on GitHub. This site was built with
-                purely HTML, CSS(SASS), Bootstrap 4 and JavaScript. Enjoy!
-              </p>
-              <div class="icons d-flex justify-content-center">
-                <a href="https://github.com/Shey1j" class="mr-4"
-                  ><i class="fa fa-github-square" aria-hidden="true"></i
-                ></a>
-                <a href="https://twitter.com/SeyiJuliana" class="mr-4"
-                  ><i class="fa fa-twitter-square" aria-hidden="true"></i
-                ></a>
-                <a href="https://www.facebook.com/awotunde.seyi.9" class="mr-4"
-                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/oluwaseyi-awotunde-ba5690149/"
-                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
-                ></a>
-              </div>
+          <div class="col-12 col-md-6 px-md-0 my-md-auto text-md-center">
+            <h4 class="font-italic">
+              <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='["Frontend Developer", "QA Tester", "Aspiring Full-stack Developer"]'
+              ></span>
+            </h4>
+            <h1>Oluwaseyi <span class="name">Awotunde</span></h1>
+            <p>
+              Welcome to my portfolio Website. Most of my works can be previewed
+              here but you can also see them on GitHub. This site was built with
+              purely HTML, CSS(SASS), Bootstrap 4 and JavaScript. Enjoy!
+            </p>
+            <div class="icons d-flex justify-content-center">
+              <a href="https://github.com/Shey1j" class="mr-4"
+                ><i class="fa fa-github-square" aria-hidden="true"></i
+              ></a>
+              <a href="https://twitter.com/SeyiJuliana" class="mr-4"
+                ><i class="fa fa-twitter-square" aria-hidden="true"></i
+              ></a>
+              <a href="https://www.facebook.com/awotunde.seyi.9" class="mr-4"
+                ><i class="fa fa-facebook-square" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/oluwaseyi-awotunde-ba5690149/"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
             </div>
+          </div>
         </div>
       </div>
       <!--ABOUT PAGE-->
@@ -831,79 +836,6 @@
             Feel free to contact me at
             <a href="mailto:seyi.juliana@gmail.com">seyi.juliana@gmail.com</a>
           </p>
-          <p>OR</p>
-          <h5 class="mb-4">Get in touch</h5>
-          <div class="px-md-5 py-5 mx-md-5 border-0">
-            <form
-              action="MAILTO:seyi.juliana@gmail.com"
-              class="px-md-5"
-              method="POST"
-              enctype="multipart/form-data"
-            >
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="firstName"
-                    id="inputFirstName"
-                    placeholder="First name"
-                    tabindex="1"
-                    autofocus
-                  />
-                </div>
-                <div class="form-group col-md-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="lastName"
-                    id="inputLastName"
-                    placeholder="Last name"
-                    tabindex="2"
-                    autofocus
-                  />
-                </div>
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="emailAddress"
-                  id="inputEmail"
-                  class="form-control"
-                  placeholder="Email"
-                  tabindex="3"
-                  autofocus
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  id="inputSubject"
-                  placeholder="Subject"
-                  tabindex="4"
-                  autofocus
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name=""
-                  id="inputMessage"
-                  cols="30"
-                  rows="10"
-                  class="form-control"
-                  name="message"
-                  placeholder="Message"
-                  tabindex="5"
-                  autofocus
-                ></textarea>
-              </div>
-              <button class="btn btn-primary" type="submit">
-                SEND MESSAGE
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </main>
