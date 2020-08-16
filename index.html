@@ -27,7 +27,7 @@
   </head>
 
   <body>
-    <header class="mb-5">
+    <header class="mb-5 d-block d-md-none">
       <nav
         class="navbar navbar-expand-lg header position-fixed sticky-top py-0 px-md-5 w-100"
         style="z-index: 99;"
@@ -56,46 +56,46 @@
               <a href="#" class="nav-link mr-4">Home</a>
             </li>
             <li class="nav-item py-2">
-              <a href="#about" class="nav-link mr-4">About Me</a>
+              <a href="#about-min" class="nav-link mr-4">About Me</a>
             </li>
             <li class="nav-item py-2">
-              <a href="#resume" class="nav-link mr-4">Resume</a>
+              <a href="#resume-min" class="nav-link mr-4">Resume</a>
             </li>
             <li class="nav-item py-2">
-              <a href="#portfolio" class="nav-link mr-4">Portfolio</a>
+              <a href="#portfolio-min" class="nav-link mr-4">Portfolio</a>
             </li>
             <li class="nav-item py-2">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact-min" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main>
+    <main class="d-block d-md-none">
       <!--MAIN BODY-->
       <!--HOME PAGE-->
       <div class="jumbotron jumbotron-fluid mb-0">
         <div
-          class="container text-center text-md-left d-md-flex px-md-3 mx-lg-auto"
+          class="container text-center"
         >
-          <div class="col-12 col-md-6 text-center text-md-left">
+          <div class="col-12">
             <img
               src="./img/IMG_20181226_165359_433.jpg"
               alt="my personal image"
               class="img-fluid rounded-circle mt-5 mb-3 img-left"
             />
           </div>
-          <div class="col-12 col-md-6 px-md-0 my-md-auto text-md-center">
-            <h4 class="font-italic">
+          <div class="col-12">
+            <p class="font-italic" style="overflow-y: hidden;">
               <span
                 class="txt-rotate"
                 data-period="2000"
                 data-rotate='["Frontend Engineer", "QA Tester", "Aspiring Full-stack Engineer"]'
               ></span>
-            </h4>
-            <h1>Oluwaseyi <span class="name">Awotunde</span></h1>
-            <p>
+            </p>
+            <h4 style="overflow-y: hidden;">Oluwaseyi <span class="name">Awotunde</span></h4>
+            <p style="line-height: normal;">
               Welcome to my portfolio Website. Most of my works can be previewed
               here but you can also see them on GitHub. This site was built with
               purely HTML, CSS(SASS), Bootstrap 4 and JavaScript. Enjoy!
@@ -119,9 +119,9 @@
         </div>
       </div>
       <!--ABOUT PAGE-->
-      <div class="container mw-100 px-5 py-4 py-md-5 text-center" id="about">
+      <div class="container mw-100 px-5 py-4 text-center" id="about-min">
         <div class="main-title mt-5 mb-4">
-          <h2 class="text-white">About Me</h2>
+          <h2 class="text-white" style="overflow-y: hidden;">About Me</h2>
           <div class="progress mx-auto" style="height: 4px; width: 150px;">
             <div
               class="progress-bar"
@@ -134,8 +134,8 @@
           </div>
         </div>
 
-        <div class="text-center px-md-5 mb-5">
-          <p class="text-white about-text px-md-5">
+        <div class="text-center mb-5">
+          <p class="text-white about-text" style="line-height: normal;">
             Recent University graduate with a Computer Science degree. Fluent in
             HTML5, CSS, SASS and Bootstrap 4 and worked with React and Redux and
             understand Git workflow. <br />
@@ -152,9 +152,9 @@
       </div>
 
       <!--RESUME PAGE-->
-      <div class="container px-4 py-4 py-md-5 mw-100" id="resume">
+      <div class="container px-4 py-4 mw-100" id="resume-min">
         <div class="text-center mt-5 mb-4">
-          <h2 style="color: #232433;">Experience</h2>
+          <h2 style="color: #232433; overflow-y: hidden;">Experience</h2>
           <div class="progress mx-auto" style="height: 4px; width: 150px;">
             <div
               class="progress-bar"
@@ -168,41 +168,31 @@
         </div>
 
         <!--EXPERIENCES AND DATES-->
-        <div class="row mb-4 px-md-5">
+        <div class="row mb-4">
           <!--HNG INTERNSHIP-->
           <div class="col-12 d-flex mb-3">
             <div class="col-3 mr-2">
-              <p class="resume-date font-weight-bold text-secondary">
+              <p class="resume-date font-weight-bold text-secondary" style="overflow-y: hidden;">
                 06/2020-08/2020
               </p>
             </div>
             <div class="col-7 my-auto">
               <div class="resume-content">
-                <h5 style="color: #232433;">Front end Developer Intern</h5>
-                <p class="company font-italic" style="color: #232433;">
+                <h5 style="color: #232433; overflow-y: hidden;">Front end Developer Intern</h5>
+                <p class="company font-italic" style="color: #232433; overflow-y: hidden;">
                   HNG Internship
                 </p>
-                <ul class="d-none d-md-block" style="color: #232433;">
-                  <li>
-                    Converted designs to code using Boostrap 4, HTML, CSS and
-                    JavaScript
-                  </li>
-                  <li>Worked as a sub team lead for an Envato-related task</li>
-                  <li>
-                    Learnt how to build responsive and pixel-perfect
-                    implementation of designs across different viewports
-                  </li>
-                </ul>
               </div>
             </div>
 
-            <div class="col-1 my-auto d-block d-md-none">
+            <div class="col-1 my-auto">
               <i
                 class="fa fa-chevron-right"
                 aria-hidden="true"
                 type="button"
-                data-toggle="modal0"
+                data-toggle="modal"
                 data-target="#hng"
+                style="cursor: pointer;"
               ></i>
 
               <!--ZEROTH MODAL-->
@@ -217,7 +207,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="hngLongTitle">
+                      <h5 class="modal-title" id="hngLongTitle" style="overflow-y: hidden;">
                         Front End Developer Intern
                       </h5>
                       <button
@@ -231,14 +221,14 @@
                     </div>
                     <div class="modal-body">
                       <div class="d-flex mb-4">
-                        <p class="company text-center">
-                          <img
-                            src="./img/brand-logo.png"
-                            alt=""
-                            class="img-fluid w-100"
-                          />
-                          HNG Internship
-                        </p>
+                        <div class="col-12 px-5" style="overflow-y: hidden;">
+                            <img
+                              src="./img/brand-logo.png"
+                              alt=""
+                              class="img-fluid w-100"
+                            />
+                        </div>
+                      </div>
                         <ul class="px-4">
                           <li>
                             Converted designs to code using Boostrap 4, HTML,
@@ -252,7 +242,6 @@
                             implementation of designs across different viewports
                           </li>
                         </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -262,42 +251,26 @@
           <!--DEVCAREER AND PROGATE-->
           <div class="col-12 d-flex mb-3">
             <div class="col-3 mr-2">
-              <p class="resume-date font-weight-bold text-secondary">
-                05/2020-08/2020
+              <p class="resume-date font-weight-bold text-secondary" style="overflow-y: hidden;">
+                05/2020-<br/>08/2020
               </p>
             </div>
             <div class="col-7 my-auto">
               <div class="resume-content">
-                <h5 style="color: #232433;">Web Development Intern</h5>
-                <p class="company font-italic" style="color: #232433;">
+                <h5 style="color: #232433; overflow-y:hidden;">Web Development Intern</h5>
+                <p class="company font-italic" style="color: #232433; overflow-y: hidden;">
                   DevCareer
                 </p>
-                <ul class="d-none d-md-block" style="color: #232433;">
-                  <li>
-                    Learnt how to use SASS and I used it in building this
-                    portfolio
-                  </li>
-                  <li>
-                    Did a mini-project using Ruby-on-Rails, based on the courses
-                    taken on the Learning path
-                  </li>
-                  <li>
-                    Did a JavaScript course to understand the fundamentals
-                    before diving solely into React
-                  </li>
-                  <li>
-                    Worked on some mini-projects using HTML, CSS and JavaScript
-                  </li>
-                </ul>
               </div>
             </div>
-            <div class="col-1 my-auto d-block d-md-none">
+            <div class="col-1 my-auto">
               <i
                 class="fa fa-chevron-right"
                 aria-hidden="true"
                 type="button"
                 data-toggle="modal"
                 data-target="#devcareer"
+                style="cursor: pointer;"
               ></i>
 
               <!--FIRST MODAL-->
@@ -312,7 +285,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="devcareerLongTitle">
+                      <h5 class="modal-title" id="devcareerLongTitle" style="overflow-y: hidden;">
                         Web Development Intern
                       </h5>
                       <button
@@ -326,7 +299,7 @@
                     </div>
                     <div class="modal-body">
                       <div class="d-flex mb-4">
-                        <div class="col-12 px-5">
+                        <div class="col-12 px-5" style="overflow-y: hidden;">
                           <img
                             src="./img/devlogo2.png"
                             alt=""
@@ -362,41 +335,24 @@
           <!--SOFTWARE TESTING-->
           <div class="col-12 d-flex mb-3">
             <div class="col-3 mr-2">
-              <p class="resume-date font-weight-bold text-secondary">
-                02/2019-07/2019
+              <p class="resume-date font-weight-bold text-secondary" style="overflow-y: hidden;">
+                02/2019-<br/>07/2019
               </p>
             </div>
             <div class="col-7 my-auto">
               <div class="resume-content">
-                <h5>Software Tester</h5>
-                <p class="company font-italic">Fieldinsight, Akoka, Lagos</p>
-                <ul class="d-none d-md-block">
-                  <li>
-                    Reviewed requirements and specifications to understand
-                    software design standards
-                  </li>
-
-                  <li>
-                    Evaluated software for functionality, form and usability
-                  </li>
-                  <li>
-                    Defined, created and controlled testing environments for
-                    successful software deliverables.
-                  </li>
-                  <li>
-                    Carried out tests to identify report and repair issues such
-                    as bugs and glitches.
-                  </li>
-                </ul>
+                <h5 style="overflow-y: hidden;">Software Tester</h5>
+                <p class="company font-italic" style="overflow-y: hidden;">Fieldinsight, Akoka, Lagos</p>
               </div>
             </div>
-            <div class="col-1 my-auto d-block d-md-none">
+            <div class="col-1 my-auto">
               <i
                 class="fa fa-chevron-right"
                 aria-hidden="true"
                 type="button"
                 data-toggle="modal"
                 data-target="#software"
+                style="cursor: pointer;"
               ></i>
 
               <!--SECOND MODAL-->
@@ -411,7 +367,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="softwareLongTitle">
+                      <h5 class="modal-title" id="softwareLongTitle" style="overflow-y: hidden;">
                         Software Tester
                       </h5>
                       <button
@@ -424,7 +380,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p class="company text-center">
+                      <p class="company text-center" style="overflow-y: hidden;">
                         <img
                           src="./img/company.png"
                           alt=""
@@ -461,44 +417,24 @@
           <!--SOFTWARE DEVELOPMENT INTERN-->
           <div class="col-12 d-flex">
             <div class="col-3 mr-2">
-              <p class="resume-date font-weight-bold text-secondary">
-                09/2018-12/2018
+              <p class="resume-date font-weight-bold text-secondary" style="overflow-y: hidden;">
+                09/2018-<br/>12/2018
               </p>
             </div>
             <div class="col-7 my-auto">
               <div class="resume-content">
-                <h5>Software Development Intern</h5>
-                <p class="company font-italic">Fieldinsight, Akoka, Lagos</p>
-                <ul class="d-none d-md-block">
-                  <li>
-                    Wrote clean, clear and well tested code for various
-                    projects, such as Facilities and Location in FIeldinsight V2
-                    , Hobby Application
-                  </li>
-                  <li>
-                    Created interactive websites with software development
-                    department using HTML and JavaScript frameworks and
-                    libraries
-                  </li>
-                  <li>
-                    Collaborated with other developers to identify and alleviate
-                    number of bugs and errors in software
-                  </li>
-                  <li>Contributed ideas during department meetings</li>
-                  <li>
-                    Worked with React JS and Redux for front end web development
-                    and Sails JS for backend web development
-                  </li>
-                </ul>
+                <h5 style="overflow-y: hidden;">Software Development Intern</h5>
+                <p class="company font-italic" style="overflow-y: hidden;">Fieldinsight, Akoka, Lagos</p>
               </div>
             </div>
-            <div class="col-1 my-auto d-block d-md-none">
+            <div class="col-1 my-auto">
               <i
                 class="fa fa-chevron-right"
                 aria-hidden="true"
                 type="button"
                 data-toggle="modal"
                 data-target="#development"
+                style="cursor: pointer;"
               ></i>
 
               <!--THIRD MODAL-->
@@ -513,7 +449,7 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="developmentLongTitle">
+                      <h5 class="modal-title" id="developmentLongTitle" style="overflow-y: hidden;">
                         Software Development Intern
                       </h5>
                       <button
@@ -526,7 +462,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p class="company text-center">
+                      <p class="company text-center" style="overflow-y: hidden;">
                         <img
                           src="./img/company.png"
                           alt=""
@@ -565,7 +501,7 @@
 
         <!--EDUCATION-->
         <div class="text-center mb-4">
-          <h2>Education</h2>
+          <h2 style="overflow-y: hidden;">Education</h2>
           <div class="progress mx-auto" style="height: 4px; width: 150px;">
             <div
               class="progress-bar"
@@ -578,33 +514,18 @@
           </div>
         </div>
 
-        <div class="row mb-4 px-md-5">
+        <div class="row mb-4">
           <div class="col-12 d-flex">
             <div class="col-3">
-              <p class="resume-date font-weight-bold text-secondary">
-                09/2014-12/2019
+              <p class="resume-date font-weight-bold text-secondary" style="overflow-y: hidden;">
+                09/2014-<br/>12/2019
               </p>
             </div>
             <div class="col-9 my-auto">
               <div class="resume-content">
-                <h5>Bachelor of Science: Computer Science</h5>
-                <p class="company font-italic">
+                <h5 style="overflow-y: hidden;">Bachelor of Science: Computer Science</h5>
+                <p class="company font-italic" style="overflow-y: hidden;">
                   University of Lagos, Akoka, Lagos, Nigeria
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 d-flex">
-            <div class="col-3">
-              <p class="resume-date font-weight-bold text-secondary">
-                09/2008-06/2014
-              </p>
-            </div>
-            <div class="col-9 my-auto">
-              <div class="resume-content">
-                <h5>High School Diploma</h5>
-                <p class="company font-italic">
-                  The Ambassadors College, Ota, Ogun State, Nigeria
                 </p>
               </div>
             </div>
@@ -614,34 +535,34 @@
 
       <!--WORK MANAGEMENT-->
       <div class="container py-5 px-5 mw-100 work-content">
-        <div class="row text-center py-md-4">
-          <div class="col-12 col-md-4 mb-3 px-md-5">
+        <div class="row text-center">
+          <div class="col-12 mb-3">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             <div class="content">
-              <h5>Web Development</h5>
-              <p>
+              <h5 style="overflow-y: hidden;">Web Development</h5>
+              <p style=" line-height: normal;">
                 I am proficient in HTML, CSS, SASS and Bootstrap 4. I have
                 worked with React, Ruby on Rails and SailsJS. I am a
                 full-fledged Frontend Developer.
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-4 mb-3 px-md-5">
+          <div class="col-12 mb-3">
             <i class="fa fa-wrench" aria-hidden="true"></i>
             <div class="content">
-              <h5>Software Testing</h5>
-              <p>
+              <h5 style="overflow-y: hidden;">Software Testing</h5>
+              <p style=" line-height: normal;">
                 I am good at testing React code using Cypress. I can also test
                 APIs using Postman. I document errors and shortcomings for
                 reviewing by other developers.
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-4 px-md-5">
+          <div class="col-12">
             <i class="fa fa-tasks" aria-hidden="true"></i>
             <div class="content">
-              <h5>Project Management</h5>
-              <p>
+              <h5 style="overflow-y: hidden;">Project Management</h5>
+              <p style=" line-height: normal;">
                 I can work well with project management tools like: Trello,
                 Clubhouse and TeamGantt. I work well with deadlines and know how
                 to motivate team members to work.
@@ -652,9 +573,9 @@
       </div>
 
       <!--MY PORTFOLIO-->
-      <div class="container px-4 py-5 mw-100 text-center" id="portfolio">
+      <div class="container px-4 py-5 mw-100 text-center" id="portfolio-min">
         <div class="main-title mt-5 mb-4">
-          <h2 style="color: #232433;">My Works</h2>
+          <h2 style="color: #232433; overflow-y: hidden;">My Works</h2>
           <div class="progress mx-auto" style="height: 4px; width: 150px;">
             <div
               class="progress-bar"
@@ -667,26 +588,26 @@
           </div>
         </div>
 
-        <div class="text-center px-md-5">
-          <p class="px-md-5" style="color: #232433;">
+        <div class="text-center">
+          <p style="color: #232433; line-height: normal;">
             Some of my recent works can be found here and the rest can be viewed
             on GitHub
           </p>
         </div>
 
-        <div class="row px-4 py-4 px-md-5">
-          <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card mx-md-4">
+        <div class="row px-4 py-4">
+          <div class="col-12 mb-4 px-5">
+            <div class="card">
               <img
                 class="card-img-top w-100"
                 src="img/designportfolio.png"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title" style="color: #232433;">
+                <h5 class="card-title" style="color: #232433; overflow-y: hidden;">
                   Envato Design Portfolio
                 </h5>
-                <p class="card-text" style="color: #232433;">
+                <p class="card-text" style="color: #232433; line-height: normal;">
                   Worked on this project based on a design during HNG internship
                   stage 7. Animations from AOS library were used.
                 </p>
@@ -700,18 +621,18 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card mx-md-4">
+          <div class="col-12 mb-4 px-5">
+            <div class="card">
               <img
                 class="card-img-top w-100"
                 src="img/certificate.PNG"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title" style="color: #232433;">
+                <h5 class="card-title" style="color: #232433; overflow-y: hidden;">
                   HNGi8 Request Certificate page
                 </h5>
-                <p class="card-text" style="color: #232433;">
+                <p class="card-text" style="color: #232433; line-height: normal;">
                   Worked on this project based on a design during HNG internship
                   stage 5. Animations from AOS library were used.
                 </p>
@@ -725,18 +646,18 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card mx-md-4">
+          <div class="col-12 mb-4 px-5">
+            <div class="card">
               <img
                 class="card-img-top w-100"
                 src="img/about.PNG"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title" style="color: #232433;">
+                <h5 class="card-title" style="color: #232433; overflow-y: hidden;">
                   HNGi8 About page
                 </h5>
-                <p class="card-text" style="color: #232433;">
+                <p class="card-text" style="color: #232433; line-height: normal;">
                   Worked on this project based on a design during HNG internship
                   stage 5. Animations from AOS library were used.
                 </p>
@@ -750,16 +671,16 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
-            <div class="card mx-md-4">
+          <div class="col-12 mb-4 px-5">
+            <div class="card">
               <img
                 class="card-img-top w-100"
                 src="img/contact.PNG"
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">HNGi8 Contact page</h5>
-                <p class="card-text">
+                <h5 class="card-title" style="color: #232433; overflow-y: hidden;">HNGi8 Contact page</h5>
+                <p class="card-text" style="color: #232433; line-height: normal;">
                   Worked on this project based on a design during HNG internship
                   stage 5. Animations from AOS library were used.
                 </p>
@@ -775,16 +696,16 @@
         </div>
 
         <a href="https://github.com/Shey1j" class="see-more"
-          ><h5>
+          ><h5 style="overflow-y: hidden;">
             SEE MORE
             <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h5
         ></a>
       </div>
 
       <!--CONTACT ME-->
-      <div class="container px-md-4 py-5 mw-100 text-center" id="contact">
+      <div class="container py-5 mw-100 text-center" id="contact-min">
         <div class="main-title mt-5 mb-4">
-          <h2 style="color: #232433;">Contact Me</h2>
+          <h2 style="color: #232433; overflow-y: hidden;">Contact Me</h2>
           <div class="progress mx-auto" style="height: 4px; width: 150px;">
             <div
               class="progress-bar"
@@ -798,8 +719,8 @@
         </div>
 
         <div class="text-center">
-          <p>Want to get in touch about a project or a job?</p>
-          <p>
+          <p style=" overflow-y: hidden;">Want to get in touch about a project or a job?</p>
+          <p style=" overflow-y: hidden;">
             Feel free to contact me at
             <a href="mailto:seyi.juliana@gmail.com">seyi.juliana@gmail.com</a>
           </p>
@@ -807,12 +728,812 @@
       </div>
     </main>
 
-    <footer class="text-center pt-4 pb-2">
-      <p class="font-italic">
+    <footer class="text-center pt-4 pb-2 d-block d-md-none">
+      <p class="font-italic" style=" overflow-y: hidden;">
         Created with love
         <i class="fa fa-heart" aria-hidden="true"></i> &copy;Oluwaseyi Awotunde
       </p>
     </footer>
+
+    <!--LARGER DISPLAYS-->
+    <main class="d-none d-md-block">
+
+      <!--DISPLAY FOR MEDIUM TO LARGE SCREENS-->
+      <div class="row d-none d-md-flex">
+        <div class="col-md-3">
+          <div class="sidebar position-fixed sticky-top">
+            <div class="col-md-12 text-center">
+              <img
+                src="./img/IMG_20181226_165359_433.jpg"
+                alt="my personal image"
+                class="img-fluid rounded-circle mt-3 mb-3 img-left"
+              />
+            </div>
+            <div class="col-md-12 text-md-center">
+              <p class="font-italic text-white" style="overflow-y: hidden;">
+                <span
+                  class="txt-rotate"
+                  data-period="2000"
+                  data-rotate='["Frontend Engineer", "QA Tester", "Aspiring Full-stack Engineer"]'
+                ></span>
+              </p>
+              <h4 class="text-white" style="line-height: normal;">
+                Oluwaseyi <span class="name">Awotunde</span>
+              </h4>
+              <p class="text-white py-2">
+                Built with HTML, CSS(SASS), Bootstrap 4 and JavaScript.
+              </p>
+              <div class="icons d-flex justify-content-center">
+                <a href="https://github.com/Shey1j" class="mr-4"
+                  ><i class="fa fa-github-square" aria-hidden="true"></i
+                ></a>
+                <a href="https://twitter.com/SeyiJuliana" class="mr-4"
+                  ><i class="fa fa-twitter-square" aria-hidden="true"></i
+                ></a>
+                <a href="https://www.facebook.com/awotunde.seyi.9" class="mr-4"
+                  ><i class="fa fa-facebook-square" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/oluwaseyi-awotunde-ba5690149/"
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <ul class="navbar-nav mt-md-2 text-center">
+                <li class="nav-item py-2">
+                  <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item py-2">
+                  <a href="#contact" class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-9 pl-0"
+          style="background-color: #e9ecef;"
+        >
+          <!--ABOUT PAGE-->
+          <div class="container mw-100 px-5 text-center" id="about">
+            <div class="main-title mt-5 mb-4">
+              <h2 style="overflow-y: hidden;">About Me</h2>
+              <div class="progress mx-auto" style="height: 4px; width: 150px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="text-center px-md-5 mb-5">
+              <p class="about-text px-md-5" style="line-height: normal;">
+                Recent University graduate with a Computer Science degree.
+                Fluent in HTML5, CSS, SASS and Bootstrap 4 and worked with React
+                and Redux and understand Git workflow. <br />
+                1+ years experience in Frontend Development and a highly
+                dedicated team player. Proficient in HTML, CSS, SASS,Bootstrap 4
+                and I am conversant with React and Ruby on Rails. Participated
+                in more than one internship with different companies.
+                <br />Effective at working in fast-paced testing environment to
+                review software at each stage of development and production.
+                Able to check function, layout and operation for usability and
+                visual design issues. Familiar with working in Agile-driven
+                environments.
+              </p>
+            </div>
+          </div>
+          <!--RESUME PAGE-->
+          <div class="container px-4 py-4 py-md-5 mw-100" id="resume">
+            <div class="text-center mt-5 mb-4">
+              <h2 style="color: #232433; overflow-y: hidden;">Experience</h2>
+              <div class="progress mx-auto" style="height: 4px; width: 150px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <!--EXPERIENCES AND DATES-->
+            <div class="row mb-4 px-md-5">
+              <!--HNG INTERNSHIP-->
+              <div class="col-12 d-flex mb-3">
+                <div class="col-3 mr-2">
+                  <p
+                    class="resume-date font-weight-bold text-secondary"
+                    style="overflow-y: hidden;"
+                  >
+                    06/2020-08/2020
+                  </p>
+                </div>
+                <div class="col-7 my-auto">
+                  <div class="resume-content">
+                    <h5 style="color: #232433; overflow-y: hidden;">
+                      Front end Developer Intern
+                    </h5>
+                    <p
+                      class="company font-italic"
+                      style="color: #232433; overflow-y: hidden;"
+                    >
+                      HNG Internship
+                    </p>
+                    <ul class="d-none d-md-block" style="color: #232433;">
+                      <li>
+                        Converted designs to code using Boostrap 4, HTML, CSS
+                        and JavaScript
+                      </li>
+                      <li>
+                        Worked as a sub team lead for an Envato-related task
+                      </li>
+                      <li>
+                        Learnt how to build responsive and pixel-perfect
+                        implementation of designs across different viewports
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-1 my-auto d-block d-md-none">
+                  <i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="modal0"
+                    data-target="#hng"
+                  ></i>
+
+                  <!--ZEROTH MODAL-->
+                  <div
+                    class="modal fade"
+                    id="hng"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="hngTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="hngLongTitle">
+                            Front End Developer Intern
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex mb-4">
+                            <p class="company text-center">
+                              <img
+                                src="./img/brand-logo.png"
+                                alt=""
+                                class="img-fluid w-100"
+                              />
+                              HNG Internship
+                            </p>
+                            <ul class="px-4">
+                              <li>
+                                Converted designs to code using Boostrap 4,
+                                HTML, CSS and JavaScript
+                              </li>
+                              <li>
+                                Worked as a sub team lead for an Envato-related
+                                task
+                              </li>
+                              <li>
+                                Learnt how to build responsive and pixel-perfect
+                                implementation of designs across different
+                                viewports
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--DEVCAREER AND PROGATE-->
+              <div class="col-12 d-flex mb-3">
+                <div class="col-3 mr-2">
+                  <p
+                    class="resume-date font-weight-bold text-secondary"
+                    style="overflow-y: hidden;"
+                  >
+                    05/2020-08/2020
+                  </p>
+                </div>
+                <div class="col-7 my-auto">
+                  <div class="resume-content">
+                    <h5 style="color: #232433; overflow-y: hidden;">
+                      Web Development Intern
+                    </h5>
+                    <p
+                      class="company font-italic"
+                      style="color: #232433; overflow-y: hidden;"
+                    >
+                      DevCareer
+                    </p>
+                    <ul class="d-none d-md-block" style="color: #232433;">
+                      <li>
+                        Learnt how to use SASS and I used it in building this
+                        portfolio
+                      </li>
+                      <li>
+                        Did a mini-project using Ruby-on-Rails, based on the
+                        courses taken on the Learning path
+                      </li>
+                      <li>
+                        Did a JavaScript course to understand the fundamentals
+                        before diving solely into React
+                      </li>
+                      <li>
+                        Worked on some mini-projects using HTML, CSS and
+                        JavaScript
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-1 my-auto d-block d-md-none">
+                  <i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#devcareer"
+                  ></i>
+
+                  <!--FIRST MODAL-->
+                  <div
+                    class="modal fade"
+                    id="devcareer"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="devcareerTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="devcareerLongTitle">
+                            Web Development Intern
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="d-flex mb-4">
+                            <div class="col-12 px-5">
+                              <img
+                                src="./img/devlogo2.png"
+                                alt=""
+                                class="d-block w-100"
+                              />
+                            </div>
+                          </div>
+
+                          <ul class="px-4">
+                            <li>
+                              Learnt how to use SASS and I used it in building
+                              this portfolio
+                            </li>
+                            <li>
+                              Did a mini-project using Ruby-on-Rails, based on
+                              the courses taken on the Learning path
+                            </li>
+                            <li>
+                              Did a JavaScript course to understand the
+                              fundamentals before diving solely into React
+                            </li>
+                            <li>
+                              Worked on some mini-projects using HTML, CSS and
+                              JavaScript
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--SOFTWARE TESTING-->
+              <div class="col-12 d-flex mb-3">
+                <div class="col-3 mr-2">
+                  <p
+                    class="resume-date font-weight-bold text-secondary"
+                    style="overflow-y: hidden;"
+                  >
+                    02/2019-07/2019
+                  </p>
+                </div>
+                <div class="col-7 my-auto">
+                  <div class="resume-content">
+                    <h5 style="overflow-y: hidden;">Software Tester</h5>
+                    <p class="company font-italic" style="overflow-y: hidden;">
+                      Fieldinsight, Akoka, Lagos
+                    </p>
+                    <ul class="d-none d-md-block">
+                      <li>
+                        Reviewed requirements and specifications to understand
+                        software design standards
+                      </li>
+
+                      <li>
+                        Evaluated software for functionality, form and usability
+                      </li>
+                      <li>
+                        Defined, created and controlled testing environments for
+                        successful software deliverables.
+                      </li>
+                      <li>
+                        Carried out tests to identify report and repair issues
+                        such as bugs and glitches.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-1 my-auto d-block d-md-none">
+                  <i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#software"
+                  ></i>
+
+                  <!--SECOND MODAL-->
+                  <div
+                    class="modal fade"
+                    id="software"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="softwareTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="softwareLongTitle">
+                            Software Tester
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="company text-center">
+                            <img
+                              src="./img/company.png"
+                              alt=""
+                              class="img-fluid w-100"
+                            />
+                            Fieldinsight, Akoka, Lagos
+                          </p>
+                          <ul class="px-4">
+                            <li>
+                              Reviewed requirements and specifications to
+                              understand software design standards
+                            </li>
+
+                            <li>
+                              Evaluated software for functionality, form and
+                              usability
+                            </li>
+                            <li>
+                              Defined, created and controlled testing
+                              environments for successful software deliverables.
+                            </li>
+                            <li>
+                              Carried out tests to identify report and repair
+                              issues such as bugs and glitches.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--SOFTWARE DEVELOPMENT INTERN-->
+              <div class="col-12 d-flex">
+                <div class="col-3 mr-2">
+                  <p
+                    class="resume-date font-weight-bold text-secondary"
+                    style="overflow-y: hidden;"
+                  >
+                    09/2018-12/2018
+                  </p>
+                </div>
+                <div class="col-7 my-auto">
+                  <div class="resume-content">
+                    <h5 style="overflow-y: hidden;">
+                      Software Development Intern
+                    </h5>
+                    <p class="company font-italic" style="overflow-y: hidden;">
+                      Fieldinsight, Akoka, Lagos
+                    </p>
+                    <ul class="d-none d-md-block">
+                      <li>
+                        Wrote clean, clear and well tested code for various
+                        projects, such as Facilities and Location in
+                        FIeldinsight V2 , Hobby Application
+                      </li>
+                      <li>
+                        Created interactive websites with software development
+                        department using HTML and JavaScript frameworks and
+                        libraries
+                      </li>
+                      <li>
+                        Collaborated with other developers to identify and
+                        alleviate number of bugs and errors in software
+                      </li>
+                      <li>Contributed ideas during department meetings</li>
+                      <li>
+                        Worked with React JS and Redux for front end web
+                        development and Sails JS for backend web development
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-1 my-auto d-block d-md-none">
+                  <i
+                    class="fa fa-chevron-right"
+                    aria-hidden="true"
+                    type="button"
+                    data-toggle="modal"
+                    data-target="#development"
+                  ></i>
+
+                  <!--THIRD MODAL-->
+                  <div
+                    class="modal fade"
+                    id="development"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="developmentTitle"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered"
+                      role="document"
+                    >
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="developmentLongTitle">
+                            Software Development Intern
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p class="company text-center">
+                            <img
+                              src="./img/company.png"
+                              alt=""
+                              class="img-fluid w-100"
+                            />
+                            Fieldinsight, Akoka, Lagos
+                          </p>
+                          <ul class="px-4">
+                            <li>
+                              Wrote clean, clear and well tested code for
+                              various projects, such as Facilities and Location
+                              in FIeldinsight V2 , Hobby Application
+                            </li>
+                            <li>
+                              Created interactive websites with software
+                              development department using HTML and JavaScript
+                              frameworks and libraries
+                            </li>
+                            <li>
+                              Collaborated with other developers to identify and
+                              alleviate number of bugs and errors in software
+                            </li>
+                            <li>
+                              Contributed ideas during department meetings
+                            </li>
+                            <li>
+                              Worked with React JS and Redux for front end web
+                              development and Sails JS for backend web
+                              development
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--EDUCATION-->
+            <div class="text-center mb-4">
+              <h2 style="overflow-y: hidden;">Education</h2>
+              <div class="progress mx-auto" style="height: 4px; width: 150px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="row mb-4 px-md-5">
+              <div class="col-12 d-flex">
+                <div class="col-3">
+                  <p
+                    class="resume-date font-weight-bold text-secondary"
+                    style="overflow-y: hidden;"
+                  >
+                    09/2014-12/2019
+                  </p>
+                </div>
+                <div class="col-9 my-auto">
+                  <div class="resume-content">
+                    <h5 style="overflow-y: hidden;">
+                      Bachelor of Science: Computer Science
+                    </h5>
+                    <p class="company font-italic" style="overflow-y: hidden;">
+                      University of Lagos, Akoka, Lagos, Nigeria
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--WORK MANAGEMENT-->
+          <div class="container py-5 px-5 mw-100 work-content">
+            <div class="row text-center py-md-4">
+              <div class="col-12 col-md-4 mb-3 px-md-3">
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                <div class="content">
+                  <h5 style="overflow-y: hidden;">Web Development</h5>
+                  <p style="line-height: normal;">
+                    I am proficient in HTML, CSS, SASS and Bootstrap 4. I have
+                    worked with React, Ruby on Rails and SailsJS. I am a
+                    full-fledged Frontend Developer.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mb-3 px-md-3">
+                <i class="fa fa-wrench" aria-hidden="true"></i>
+                <div class="content">
+                  <h5 style="overflow-y: hidden;">Software Testing</h5>
+                  <p style="line-height: normal;">
+                    I am good at testing React code using Cypress. I can also
+                    test APIs using Postman. I document errors and shortcomings
+                    for reviewing by other developers.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 px-md-3">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <div class="content">
+                  <h5 style="overflow-y: hidden;">Project Management</h5>
+                  <p style="line-height: normal;">
+                    I can work well with project management tools like: Trello,
+                    Clubhouse and TeamGantt. I work well with deadlines and know
+                    how to motivate team members to work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--MY PORTFOLIO-->
+          <div class="container px-4 py-5 mw-100 text-center" id="portfolio">
+            <div class="main-title mt-5 mb-4">
+              <h2 style="color: #232433; overflow-y: hidden;">My Works</h2>
+              <div class="progress mx-auto" style="height: 4px; width: 150px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="text-center px-md-5">
+              <p class="px-md-5" style="color: #232433; overflow-y: hidden;">
+                Some of my recent works can be found here and the rest can be
+                viewed on GitHub
+              </p>
+            </div>
+
+            <div class="row px-4 py-4 px-md-4">
+              <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
+                <div class="card mx-md-4">
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="color: #232433; overflow-y: hidden;"
+                    >
+                      Envato Design Portfolio
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="color: #232433; line-height: normal;"
+                    >
+                      Worked on this project based on a design during HNG
+                      internship stage 7. Animations from AOS library were used.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://envato-2-0.netlify.app/"
+                      class="btn btn-primary"
+                      >Live Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
+                <div class="card mx-md-4">
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="color: #232433; overflow-y: hidden;"
+                    >
+                      HNGi8 Request page
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="color: #232433; line-height: normal;"
+                    >
+                      Worked on this project based on a design during HNG
+                      internship stage 5. Animations from AOS library were used.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://hngi8.netlify.app/pages/request-certificate.html"
+                      class="btn btn-primary"
+                      >Live Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
+                <div class="card mx-md-4">
+                  <div class="card-body">
+                    <h5
+                      class="card-title"
+                      style="color: #232433; overflow-y: hidden;"
+                    >
+                      HNGi8 About page
+                    </h5>
+                    <p
+                      class="card-text"
+                      style="color: #232433; line-height: normal;"
+                    >
+                      Worked on this project based on a design during HNG
+                      internship stage 5. Animations from AOS library were used.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://hngi8.netlify.app/pages/about.html"
+                      class="btn btn-primary"
+                      >Live Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 mb-4 px-5 px-md-0">
+                <div class="card mx-md-4">
+                  <div class="card-body">
+                    <h5 class="card-title" style="overflow-y: hidden;">
+                      HNGi8 Contact page
+                    </h5>
+                    <p class="card-text" style="line-height: normal;">
+                      Worked on this project based on a design during HNG
+                      internship stage 5. Animations from AOS library were used.
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://hngi8.netlify.app/pages/contact.html"
+                      class="btn btn-primary"
+                      >Live Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://github.com/Shey1j" class="see-more"
+              ><h5 style="overflow-y: hidden;">
+                SEE MORE
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i></h5
+            ></a>
+          </div>
+
+          <!--CONTACT ME-->
+          <div class="container px-md-4 py-5 mw-100 text-center" id="contact">
+            <div class="main-title mt-5 mb-4">
+              <h2 style="color: #232433; overflow-y: hidden;">Contact Me</h2>
+              <div class="progress mx-auto" style="height: 4px; width: 150px;">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 50%;"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <p style="line-height: normal;">Want to get in touch about a project or a job?</p>
+              <p style="line-height: normal;">
+                Feel free to contact me at
+                <a href="mailto:seyi.juliana@gmail.com"
+                  >seyi.juliana@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <footer class="text-center pt-4 pb-2">
+            <p class="font-italic" style="line-height: normal;">
+              Created with love
+              <i class="fa fa-heart" aria-hidden="true"></i> &copy;Oluwaseyi Awotunde
+            </p>
+          </footer>
+        </div>
+      </div>
+    </main>
 
     <script src="./js/txtRotate.js"></script>
     <script
